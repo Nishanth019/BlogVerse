@@ -1,0 +1,36 @@
+/* Base styles for desktop view */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 18px;
+  color: #999;
+}
+
+/* Mobile view styles (applies only for screens with a maximum width of 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically for mobile view */
+    text-align: center; /* Center align text for mobile view */
+    gap: 20px; /* Reduce the gap between items for mobile view */
+  }
+
+  .image {
+    width: 100%; /* Make the image full width for mobile */
+  }
+}

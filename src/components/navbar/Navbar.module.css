@@ -1,0 +1,77 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links {
+    flex-direction: row; /* Stack links vertically */
+    gap: 10px; /* Reduce the gap between links */
+  }
+
+  /* Hide specific links (except Home, Blog, Dashboard) in mobile view */
+  .links .link {
+    display: none;
+  }
+
+  /* You can use nth-child to selectively display links */
+  .links .link:nth-child(2), /* Home */
+  .links .link:nth-child(4), /* Blog */
+  .links .link:nth-child(7) /* Dashboard */ {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+ 
+  .logo{
+    margin-left: -50px;
+   padding-right: 5px;
+  }
+  .links {
+    flex-direction: row; /* Stack links vertically */
+    gap: 10px; /* Reduce the gap between links */
+    margin-left: 5px;
+  }
+
+  /* Hide specific links (except Home, Blog, Dashboard) in mobile view */
+  .links .link {
+    display: none;
+  }
+
+  /* You can use nth-child to selectively display links */
+  .links .link:nth-child(2), /* Home */
+  .links .link:nth-child(4), /* Blog */
+  .links .link:nth-child(7) /* Dashboard */ {
+    display: block;
+  }
+}
+
+.logout {
+  padding: 5px;
+  border: none;
+  background-color: #53c28b;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}

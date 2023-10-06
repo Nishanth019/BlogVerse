@@ -1,0 +1,147 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .title{
+    text-align: center;
+  }
+  
+  .subtitle{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input {
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+    color: #bbb;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .button {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #49b07d;
+  }
+  
+  .or {
+    color: #bbb;
+  }
+  
+  .link {
+    text-decoration: underline;
+    color: #7d7c7c;
+  }
+  
+  .link:hover {
+    color: rgb(61, 61, 61);
+  }
+  
+  .google {
+    background-color: rgba(228, 97, 50, 0.72);
+  }
+  
+  .google:hover {
+    background-color: rgba(228, 97, 50, 0.803);
+  }
+
+  @media (max-width: 425px) {
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      /* gap: 20px; */
+    }
+    
+    .title {
+      color: #bbb;
+      font-size: 24px; /* Increase font size for mobile */
+    }
+    
+    .subtitle {
+      font-size: 16px; /* Decrease font size for mobile */
+      margin-bottom: 20px; /* Reduce margin for mobile */
+      color: #bbb;
+    }
+    
+    .form {
+      width: 120%; /* Full width for mobile */
+      /* max-width: 600px; Limit the form width */
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* Reduce gap for mobile */
+    }
+    
+    .input {
+      padding: 10px; /* Reduce padding for mobile */
+      background-color: transparent;
+      border: 2px solid #bbb;
+      border-radius: 5px;
+      outline: none;
+      color: #bbb;
+      font-size: 16px; /* Decrease font size for mobile */
+      font-weight: bold;
+    }
+    
+    .button {
+      width: 100%; /* Full width for mobile */
+      padding: 10px; /* Reduce padding for mobile */
+      cursor: pointer;
+      background-color: #53c28b;
+      border: none;
+      border-radius: 5px;
+      color: #eee;
+      font-weight: bold;
+      font-size: 16px; /* Decrease font size for mobile */
+    }
+    
+    .button:hover {
+      background-color: #49b07d;
+    }
+    
+    .or {
+      color: #bbb;
+    }
+    
+    .link {
+      text-decoration: underline;
+      color: #7d7c7c;
+    }
+    
+    .link:hover {
+      color: rgb(61, 61, 61);
+    }
+    
+    .google {
+      background-color: rgba(228, 97, 50, 0.72);
+    }
+    
+    .google:hover {
+      background-color: rgba(228, 97, 50, 0.803);
+    }
+    
+  }
