@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 async function getData(id) {
   console.log(id);
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts/${id}`, {
     cache: 'no-store',
   });
 
